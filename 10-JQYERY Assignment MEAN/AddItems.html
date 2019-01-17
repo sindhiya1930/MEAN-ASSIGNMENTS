@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Add items to dropdown</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<select id="ddlList">
+  <option value="1">Sunflower</option>
+  <option value="2">Rose</option>
+  <option value="3">Lily</option>
+  <option value="4">Jasmine</option>
+  <option value="5">Lotus</option>
+</select>
+
+<br/><br/>
+<input type="button" id="btnAddToBegining" Value="Add Item" />
+<script>
+$(document).ready(function(){
+    $('#btnAddToBegining').click(function(){
+      $("#ddlList").prepend("<option value='0' selected='selected'> Select </option>");
+    });
+
+});
+</script>
+<body>
+</html>

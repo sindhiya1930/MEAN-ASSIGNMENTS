@@ -1,0 +1,14 @@
+{
+  "name": "mysqlserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mysql_create_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}

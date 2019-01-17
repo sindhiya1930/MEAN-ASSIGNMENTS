@@ -1,0 +1,24 @@
+URL : https://github.com/sindhiya1930/git-_Mean
+
+(into master code)
+git init 
+git add .
+git commit -m " "
+git remote origin "https://github.com/sindhiya1930/git-_Mean.git"
+git push origin master
+
+(into UI code)
+git checkout -b UI
+git init 
+git add .
+git commit -m " "
+git remote ui "https://github.com/sindhiya1930/git-_Mean.git"
+git push ui UI
+
+(into middleware code)
+git checkout -b middleware
+git init 
+git add .
+git commit -m " "
+git remote middleware "https://github.com/sindhiya1930/git-_Mean.git"
+git push middleware middleware

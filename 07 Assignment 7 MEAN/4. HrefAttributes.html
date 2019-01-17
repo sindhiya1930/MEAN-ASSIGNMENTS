@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<meta charset=utf-8 /> 
+<title>The value of href, hreflang, rel, target, and type attributes of a link</title> 
+
+<script type='text/javascript'>
+
+function get()
+{
+ var a = document.getElementById("cog").href;
+ var b = document.getElementById("cog").hreflang;   
+ var c = document.getElementById("cog").rel; 
+ var d = document.getElementById("cog").target; 
+ var e = document.getElementById("cog").type; 
+
+
+document.getElementById("dem").innerHTML ="href attribute  is : "+a+"<br><br>hreflang attribute  is : "+b+"<br><br>rel attribute  is : "+c+"<br><br>taget attribute  is : "+d+"<br><br>type attribute  is : "+e;
+}
+</script>
+</head> 
+<body> 
+<p><a id="cog" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.sunrise.com/">Sunrise</a></p> 
+<button onclick="get()">Click here</button> 
+<p id="dem"></p> 
+
+
+
+
+
+
+</body> 
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+ <title>longest string in sentence </title>
+</head>
+<body>
+<p>Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.Using builtin functions. </p>
+
+
+<form>
+
+<input type="button" onClick="check()" Value="longest" />
+
+</form>
+
+
+
+<script type='text/javascript'>
+function check()
+{ 
+var str = ["Write","a", "JavaScript"," function ","that ","accepts ","string"," as"," parameter"," and"," find"," the "];
+document.write("String passed"+str);
+var longest = str.reduce(function(a, b) { 
+  return a.length > b.length ? a : b
+}, '');
+  
+    document.write("<br> <br>  Longest is "+longest);
+  
+}
+
+</script>
+
+</body>
+</html>

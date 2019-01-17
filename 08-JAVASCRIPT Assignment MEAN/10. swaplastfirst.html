@@ -1,0 +1,20 @@
+<html>
+<head>
+ <title>swap first and last </title>
+</head>
+<body>
+<p>Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1 </p>
+
+<script type='text/javascript'>
+
+function swap(arra) {
+    [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+    return arra;
+}
+document.write(" Array is [1, 2, 3, 4] and after swapping  "+swap([1, 2, 3, 4])+'\t');  
+document.write(" Array is [0, 2, 1]  and after swapping  "+swap([0, 2, 1]));   
+
+</script>
+
+</body>
+</html>

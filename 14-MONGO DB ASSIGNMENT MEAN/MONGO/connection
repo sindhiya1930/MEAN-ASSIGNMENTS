@@ -1,0 +1,5 @@
+Connect mongo db:
+
+Ip:Port=localhost:27017
+database:documents
+collection:document

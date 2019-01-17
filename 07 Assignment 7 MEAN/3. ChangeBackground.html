@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Set the background color of a paragraph</title>
+</head>
+<body>
+
+<p>Sand is a granular material composed of finely divided rock and mineral particles. It is defined by size, being finer than gravel and coarser than silt.</p><br><br> 
+<p>Click to change the background color for the paragraph</p> 
+<input type="button" value="Click to change" onclick="set_background()">
+<script type='text/javascript'>
+
+function set_background() 
+{
+  docBody = document.getElementsByTagName("body")[0];
+  
+  myBodyElements = docBody.getElementsByTagName("p");
+
+  myBodyElements[0].style.background = "red";
+  myBodyElements[1].style.background = "yellow";
+
+}
+</script>
+
+</body>
+</html>

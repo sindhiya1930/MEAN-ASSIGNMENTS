@@ -1,0 +1,14 @@
+/**
+ * from file 2
+ */
+ .container {
+	width: 100%;
+}
+
+.success {
+	background-color: lightgreen;
+}
+
+.error {
+	background-color: red;
+}

@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title> number of occurrences  </title>
+</head>
+<body>
+<p>Write a JavaScript function to get the number of occurrences of each letter in specified string.</p>
+
+<script type='text/javascript'>
+
+
+var str = 'The quick brown fox jumps over the lazy dog';
+var letters = new Object;
+
+for(x = 0, length = str.length; x < length; x++) {
+	var l = str.charAt(x)
+	letters[l] = (isNaN(letters[l]) ? 1 : letters[l] + 1);
+}
+
+for(key in letters) {
+	document.write("<br>"+key + ' : ' + letters[key] + '\t');
+}
+
+</script>
+
+</body>
+</html>
+

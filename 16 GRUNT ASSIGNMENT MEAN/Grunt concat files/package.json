@@ -1,0 +1,22 @@
+{
+  "name": "gruntdemo",
+  "version": "1.0.0",
+  "description": "run grunt command",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-copy": "^0.1.0",
+    "grunt-copy-file-content": "^0.1.0"
+  }
+}

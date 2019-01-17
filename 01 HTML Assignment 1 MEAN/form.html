@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" type="text/css" href="formstyle.css"/>
+	</head>
+	<body>
+		<div id="sample">
+		Fields marked (*) are required
+		<form action="/signup" method="get">
+			<fieldset>
+				<legend><b>Input Text Field Validation</b></legend>
+					First Name * <input type="text" name="fname" id="fnm" required="" pattern="[A-Za-z].*" placeholder="First Name" title="Should contain alphabets" style="width:300px;" /><br/><br/>
+					Last Name * <input type="text" name="lname" id="lnm" required="" pattern="[A-Za-z].*" placeholder="Last Name" title="Should contain alphabets" style="width:300px;" /><br/><br/>
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Email and URL Validation</b></legend>
+					Email * &emsp;&emsp;<input type="email" name="email" id="em" required="" placeholder="e.g. swapnil@example.com" style="width:300px;" /><br/><br/>
+					Website * &emsp;<input type="text" name="website" id="web"required="" placeholder="e.g. http://www.ntml5andcss3.org" style= width:300px;" /><br/><br/>
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Mobile or Phone Number Validation</b></legend>
+					Mobile * &ensp;&ensp;&ensp;<input type="text" name="phone" id="number" required="" placeholder="Please enter a ten digit phone number" pattern="[6-9]{1}[0-9]{9}" title="Please enter a ten digit phone number" style="width:300px;" /><br/><br/>
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Drop Down Box Validation</b></legend>
+				
+				 <label>Country *&ensp;&ensp;</label>
+
+					<select name="country_name" class="selectBox" required="">
+            					<option value="India">India</option>
+            					<option value="China">China</option>
+            					<option value="USA">USA</option>
+            					<option value="Japan">Japan</option>
+            					<option value="France">France</option>
+            					<option value="Italy">Italy</option>
+					</select> 
+
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Number Validation With Specific Range</b></legend>
+					Post code * &ensp;<input type="text" name="postalcode" id="code" required="" pattern="[6]{1}[0-9]{5}" title="Please enter a valid postcode" style="width:300px;" /><br/><br/>
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Textarea Validation</b></legend>
+					Address * &ensp;&ensp;<input type="text" name="Address" id="add" required="" title="Provide a present valid address"style="width:300px;" /><br/><br/>
+			</fieldset>
+
+			<fieldset>
+				<legend><b>CheckBox and Radio Button Validation</b></legend>
+					Agree to T & C * <input type="checkbox" name="agree" id="tc" value="agree"><br><br/><br/>
+					General *  <input type="radio" name="gender" id="gender" value="male"> Male
+							<input type="radio" name="gender" id="gender" value="female"> Female
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Password Validation Using Pattern</b></legend>
+					Password * &ensp;<input type="text" name="password" id="pass" required="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="must contain at least one digit ,must contain at least one uppercase character , must contain at least one special symbol , length is exactly 8 characters" style="width:300px;" /><br/><br/>
+			</fieldset>
+			<input type="submit" class="submit" value="Sign up" style=" float: right;">
+		</form>
+		</div>
+	</body>
+</html>

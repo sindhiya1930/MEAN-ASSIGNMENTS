@@ -1,0 +1,39 @@
+<html>
+<head>
+ <title>copy of last 3 letters</title>
+</head>
+<body>
+<p>Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above. </p>
+
+
+<form>
+String : <input type="text" id="first" /><br><br>
+
+<input type="button" onClick="check()" Value="value" />
+
+</form>
+
+<p>The string is : 
+
+<span id = "check1"></span>
+
+</p>
+
+<script type='text/javascript'>
+function check()
+{ 
+
+var str= document.getElementById("first").value;
+
+if (str.length >= 3) {
+    result_str = str.substring(str.length - 3);
+    document.getElementById("check1").innerHTML = result_str + result_str + result_str + result_str;
+  }
+  else{
+    document.getElementById("check1").innerHTML = "false";}
+      
+}
+
+</script>
+</body>
+</html>

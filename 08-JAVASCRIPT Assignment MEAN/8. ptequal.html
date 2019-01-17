@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>Equal number of  p’s and t’s.</title>
+</head>
+<body>
+<p>check if a given string contains equal number of  p’s and t’s present.</p>
+
+<form>
+String : <input type="text" id="first" /><br><br>
+
+<input type="button" onClick="equal()" Value="Multiply" />
+
+</form>
+
+<p>The output is : 
+
+<span id = "check"></span>
+
+</p>
+
+<script type='text/javascript'>
+function equal()
+{ 
+
+var str=num1 = document.getElementById("first").value;
+  var str_p = str.replace(/[^p]/g, "");
+
+  var str_t = str.replace(/[^t]/g, "");
+
+  var p_num = str_p.length;
+  var s_num = str_t.length;
+
+  if(p_num === s_num)
+  {
+  document.getElementById("check").innerHTML = "true";
+  }
+  else
+  {
+  document.getElementById("check").innerHTML = "false";
+  }
+         
+}
+</script>
+</body>
+</html>

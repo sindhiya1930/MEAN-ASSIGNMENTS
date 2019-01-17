@@ -1,0 +1,27 @@
+<html> 
+<head> 
+<title>Remove items from a drop down</title> 
+
+<script type='text/javascript'>
+
+function removedropdown()
+{
+var x=document.getElementById("Select");
+x.remove(x.selectedIndex);
+}
+</script>
+</head>
+<body>
+<h4>Select the item to be removed from drop down</h4>
+<form> 
+<select id="Select"> 
+<option>Lotus</option> 
+<option>Lily</option> 
+<option>Jasmin</option> 
+<option>Violet</option> 
+</select> 
+<input type="button" onclick="removedropdown()" value="Select and Remove"> 
+</form>
+
+</body>
+</html>

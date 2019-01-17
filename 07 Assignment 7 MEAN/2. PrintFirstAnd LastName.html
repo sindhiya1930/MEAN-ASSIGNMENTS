@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Return first and last name from a form</title>
+<script>
+
+function result() 
+{ 
+        var first = document.getElementById("firstname").value;
+        var last = document.getElementById("lastname").value;
+	document.getElementById("formvalue").innerHTML = "firstname:"+first+"</br>lastname:"+last;
+}
+   
+</script>
+
+</head>
+<body>
+<form id="formvalue" >
+<label>First name:</label> <input type="text" id="firstname" name="firstname" placeholder="firstname"><br/><br/>
+
+<label>Last name:</label> <input type="text" id="lastname" name="lastname" placeholder="lastname"><br><br/>
+
+<input type="submit" value="submit!" id="OK" onclick=result()>
+
+
+</form>
+
+</body>
+</html>

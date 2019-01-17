@@ -1,0 +1,57 @@
+#box{
+   					width:700px; 
+   					height:600px;
+					border: 20px solid #e6e6e6;
+					margin:0 auto;
+
+					}
+
+				#bin{
+					width:330px;
+					height:470px;
+					padding:5px;
+					float:left;
+				}
+
+				#drag{
+					width:350px;
+					height:470px;
+					padding:5px;
+					float:right;
+
+				}
+				
+				#button1,#button2,#button3,#button4,#button5{
+					width:140px;
+					height:25px;
+					background-color:#2eb82e;
+					margin:0 auto;
+					text-align:left;
+					padding:6px;
+
+				
+				}
+
+				img.center {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 110px;
+				}
+
+
+				h1{
+					color:#2eb82e;
+					text-align:center;
+				}
+				
+				h3{
+					text-align:center;
+				}
+				
+				ul {
+					list-style-type: none;
+					text-align:center;
+					margin-top: 86px;
+
+				}

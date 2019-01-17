@@ -1,0 +1,40 @@
+<html> 
+<head> 
+<title>Changing the content of a table</title> 
+
+
+<script type='text/javascript'>
+
+function changetableContent()
+{
+rn = window.prompt("Input the Row number(0-2)", "0");
+cn = window.prompt("Input the Column number(0 or 1)","0");
+content = window.prompt("Input the Cell value");  
+var x=document.getElementById('Table1').rows[parseInt(rn,10)].cells;
+x[parseInt(cn,10)].innerHTML=content;
+}
+</script>
+</head>
+
+<body>
+ 
+<table id="Table1" border="1"> 
+<tr>
+	<td>Row0 column0</td> 
+	<td>Row0 column1</td>
+</tr> 
+<tr>
+	<td>Row1 column0</td> 
+	<td>Row1 column1</td>
+</tr> 
+<tr>
+	<td>Row2 column0</td> 
+	<td>Row2 column1</td>
+</tr> 
+</table>
+<form> 
+<input type="button" onclick="changetableContent()" value="Change content"> 
+</form>
+
+
+</body></html>

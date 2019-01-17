@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>change demo</title>
+  <style>
+  div {
+    color: green;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <h3>Selecting the item changes the value</h3>
+<input type="text" id="txtBox" />
+<div></div>
+ 
+<script>
+$("#txtBox").on('change', function(e){ 
+
+    alert('txtBox has changed: ' + $(this).val());
+    
+});
+</script>
+ 
+</body>
+</html>

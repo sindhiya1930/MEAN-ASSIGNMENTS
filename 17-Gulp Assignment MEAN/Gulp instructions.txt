@@ -1,0 +1,14 @@
+Gulp
+
+npm install -g gulp
+
+npm install gulp --save-dev
+
+npm init
+
+
+npm install gulp-concat --save-dev
+
+npm install gulp-rimraf --save-dev
+
+npm install gulp-minify-css --save-dev

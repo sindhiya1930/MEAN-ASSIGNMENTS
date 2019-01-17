@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>DRAG AND DROP</title>
+			
+
+			<script>
+				function drag(ev){
+					ev.dataTransfer.setData("text",ev.target.id);
+				}
+
+				function drop(ev){
+					ev.preventDefault();
+					var data=ev.dataTransfer.getData("text");
+					ev.target.appendChild(document.getElementById(data));
+
+				}
+
+				function allowDrop(ev){
+					ev.preventDefault();
+				}
+
+			</script>
+		</head>
+<link rel="stylesheet" type="text/css" href="drag.css"/>
+		<body>
+			<div id="box">
+				<h1>HTML5 Drag and Drop</h1>
+				<h3>Drag list of items on dust bin</h3>
+
+				<div id="bin">
+
+    					<img class="center" src="bin.jpg" align="middle" ondrop="drop(event)" ondragover="allowDrop(event)" width="200" height="200"/>
+				</div>
+
+				<div id="drag">
+					<ul>
+
+    						<li><div id="button1"  draggable="true" ondragstart="drag(event)" >Music</div></li><br>
+
+    						<li><div id="button2"  draggable="true" ondragstart="drag(event)" >Docs</div></li><br>
+
+						<li><div id="button3"  draggable="true" ondragstart="drag(event)" >Videos</div></li><br>
+    
+						<li><div id="button4"  draggable="true" ondragstart="drag(event)" >Images</div></li><br>
+    
+						<li><div id="button5"  draggable="true" ondragstart="drag(event)" >Others</div></li><br>
+					</ul>
+				</div>
+			</div>
+	</body>
+</html>

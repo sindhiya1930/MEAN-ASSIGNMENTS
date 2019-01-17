@@ -1,0 +1,42 @@
+<html>
+<head>
+ <title> generates a string id  </title>
+</head>
+<body>
+<p>Write a JavaScript function that generates a string id (specified length) of random characters.</p>
+
+<form>
+Number : <input type="enter length value" id="first" /><br><br>
+
+<input type="button" onClick="check()" Value="process" />
+
+</form>
+
+<p>The String is : 
+<span id = "check2"></span><br>
+The value is : 
+<span id = "check1"></span>
+
+</p>
+
+<script type='text/javascript'>
+
+function check()
+{ 
+
+var str= document.getElementById("first").value;
+var text = "";
+var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+document.getElementById("check2").innerHTML = char_list;
+for(var i=0; i < 8; i++ )
+{  
+text += char_list.charAt(Math.floor(Math.random() * char_list.length));
+}
+document.getElementById("check1").innerHTML =text;
+
+}
+</script>
+
+</body>
+</html>
+

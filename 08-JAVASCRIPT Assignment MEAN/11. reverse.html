@@ -1,0 +1,37 @@
+<html>
+<head>
+ <title>swap first and last </title>
+</head>
+<body>
+<p>Write a JavaScript function that reverse a number.Using built in functions. </p>
+
+
+<form>
+String : <input type="text" id="first" /><br><br>
+
+<input type="button" onClick="check()" Value="reverse" />
+
+</form>
+
+<p>The reversed value is : 
+
+<span id = "check1"></span>
+
+</p>
+
+<script type='text/javascript'>
+function check()
+{ 
+
+var str= document.getElementById("first").value;
+
+var str1= str.split("").reverse().join("");
+
+    document.getElementById("check1").innerHTML = str1;
+  
+}
+
+</script>
+
+</body>
+</html>
